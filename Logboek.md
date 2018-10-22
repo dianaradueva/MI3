@@ -14,3 +14,10 @@
 * Idee over app bespreken met teamgenoot
 
 # Totale duur : 
+
+## Week 4 - 0,30 uur
+*database aanmaken op server voor project
+
+## Week 5 - 2 uur
+*structuur van hybride maken
+*andere paginas van de app maken
