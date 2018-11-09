@@ -1,5 +1,5 @@
 <?php
-$con = mysqli_connect("localhost", "alexandraklochkova", "alexandraklochkovaMI3", "events_db");
+$con = mysqli_connect("localhost", "dianaradueva", "dianaraduevaMI3", "events_db");
 $naam = $_REQUEST["naam"];
 $voornaam = $_REQUEST["voornaam"];
 $gebruikersnaam = $_REQUEST["gebruikersnaam"];
