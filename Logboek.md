@@ -10,17 +10,19 @@
 * Oefeningen op php proberen
 * Idee over app bespreken
 
-## Week 3 
+## Week 3 - 2 uur
 * Idee over app bespreken met teamgenoot
+* Aanpak van de opdracht bespreken
+* Taken beetje verdelen
 
 # Totale duur : 
 
-## Week 4 - 0,30 uur
-*database aanmaken op server voor project
+## Week 4 - 1 uur
+* database aanmaken op server voor project
 
 ## Week 5 - 2 uur
-*structuur van hybride maken
-*andere paginas van de app maken
+* structuur van hybride maken
+* andere paginas van de app maken
 
 ## Week 6 - 6 uur
 * Tabellen in de database maken die we nodig hebben voor de app
