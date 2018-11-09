@@ -21,3 +21,9 @@
 ## Week 5 - 2 uur
 *structuur van hybride maken
 *andere paginas van de app maken
+
+## Week 6 - 6 uur
+* Tabellen in de database maken die we nodig hebben voor de app
+* Layout aanpassen van wat we reeds hebben
+* Data proberen te linken postman Filezilla
+* Kijken of data effectief in database wordt opgeslagen als men de data invult 
