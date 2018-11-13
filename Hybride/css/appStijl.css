@@ -13,3 +13,13 @@ p {
 .komendeEvents {
     padding: 20px;
 }
+
+form {
+    padding: 30px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 5px;
+    width: 100px;
+}
