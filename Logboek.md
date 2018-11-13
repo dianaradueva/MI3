@@ -29,3 +29,9 @@
 * Layout aanpassen van wat we reeds hebben
 * Data proberen te linken postman Filezilla
 * Kijken of data effectief in database wordt opgeslagen als men de data invult 
+
+## Week 7 - 6 uur
+* Pagina's met elkaar linken
+* Inhoud van pagina's uittekenen
+* Inhoud pagina Vriendenlijst maken
+* CSS toepassen op de pagina's
