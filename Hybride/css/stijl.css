@@ -28,12 +28,18 @@ h2
     color: white;
 }
 
-nav
+.nav
 {
     background-color: darkseagreen;
 }
 
-.sidenav li>a
+.sidenav
 {
-    color:darkcyan;
+       background-color: black;
+    color: whitesmoke;
+    
+}
+
+.sidenav li > a{
+    color: white;
 }
