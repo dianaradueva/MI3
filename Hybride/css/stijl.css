@@ -1,45 +1,73 @@
-body
-{
+body {
+    text-align: ;
+}
+
+#index-body {
     text-align: center;
 }
 
-h1
-{
-    font-size: 8vw;
-    color: #77a863;
+#login-body {
+    text-align: center;
 }
 
-h2
-{
+#signup-body {
+    text-align: center;
+}
+
+h1 {
+    font-size: 8vw;
+    color: black;
+}
+
+h2 {
     margin-top: 5vh;
     font-size: 5vw;
-    color: #3c7a24;
+    color: black;
 }
-    
-.btn-large
-{
-    width:50vw;
-    background-color: darkcyan;
+
+.btn-large {
+    width: 50vw;
+    background-color: #3CA757;
     color: white;
 }
 
-.brand-logo center
-{
+.brand-logo center {
     color: white;
 }
 
-.nav
-{
-    background-color: darkseagreen;
+.nav {
+    background-color: #3CA757;
 }
 
-.sidenav
-{
-       background-color: black;
+.sidenav {
+    background-color: black;
     color: whitesmoke;
-    
+
 }
 
-.sidenav li > a{
+.sidenav li > a {
+    color: white;
+}
+
+.userprofiel {
+    margin-top: 20px;
+    border-bottom: 200px solid black;
+    height: 0;
+    color: white;
+    margin: 20px;
+}
+
+
+.komendeEvents {
+    padding: 20px;
+}
+
+form {
+    padding: 30px;
+}
+
+button {
+    width: 20vw;
+    background-color: #3CA757;
     color: white;
 }
