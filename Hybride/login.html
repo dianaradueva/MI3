@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta title="Test">
@@ -9,12 +8,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="../js/Sidenav.js"></script>
+    <script type="text/jscript" src="../js/Connectie.js"></script>
 
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection">
-    <link type="text/css" rel="stylesheet" href="/css/stijl.css">
 
     <link type="text/css" rel="stylesheet" href="./css/materialize.min.css" media="screen,projection">
     <link type="text/css" rel="stylesheet" href="./css/stijl.css">
+
 
 </head>
 
@@ -31,8 +31,9 @@
     <input type="text" id="wwoord" name="wachtwoord">
     <br>
     <br>
-    <input class="btn-large" type="submit" value="Login">
+    <input onclick="logincheck()" class="btn-large" type="submit" value="Login">
     <script type="text/javascript" src="../js/materialize.min.js"></script>
+
 </body>
 
 </html>
