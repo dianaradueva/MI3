@@ -1,17 +1,17 @@
 body {
-    text-align: center;
+    text-align: left;
 }
 
 #index-body {
-    text-align: center;
+    text-align: left;
 }
 
 #login-body {
     text-align: center;
 }
 
-input{
-   height:1vh;
+input {
+    height: 1vh;
 }
 
 
@@ -20,7 +20,7 @@ input{
 }
 
 h1 {
-    margin-top:5vh;
+    margin-top: 5vh;
     font-size: 8vw;
     color: black;
 }
@@ -52,26 +52,27 @@ h2 {
 .sidenav {
     background-color: black;
     color: whitesmoke;
+    text-align: center;
 }
 
 .sidenav li a {
     color: white;
 }
 
-.divideLogo{
-    display:block;
-    float:left;
+.divideLogo {
+    display: block;
+    float: left;
     margin-left: 2vw;
     margin-top: 1vw;
-    height:0vh;
+    height: 0vh;
 }
 
-.user-view Background{
-    text-align:center;
+.user-view Background {
+    text-align: center;
 }
 
-.Background-logo{
-    text-align:center;
+.Background-logo {
+    text-align: center;
 }
 
 
@@ -83,8 +84,7 @@ h2 {
     margin: 20px;
 }
 
-<<<<<<< HEAD
-.profielfoto {
+<<<<<<< HEAD .profielfoto {
     width: 90px;
     height: 90px;
     border-color: white;
@@ -94,14 +94,12 @@ h2 {
 }
 
 
-=======
->>>>>>> 98d81deae8bea80e097a02ddc1c16b5d86b4d7b5
-.komendeEvents {
+======= > > > > > > > 98d81deae8bea80e097a02ddc1c16b5d86b4d7b5 .komendeEvents {
     padding: 20px;
 }
 
 form {
-    padding:5vw;
+    padding: 5vw;
 }
 
 button {
@@ -110,7 +108,3 @@ button {
     color: white;
     padding: 5px;
 }
-
-
-
-
