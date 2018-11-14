@@ -57,6 +57,15 @@ h2 {
     margin: 20px;
 }
 
+.profielfoto {
+    width: 90px;
+    height: 90px;
+    border-color: white;
+    margin: 10px;
+    background-color: white;
+    border-radius:
+}
+
 
 .komendeEvents {
     padding: 20px;
