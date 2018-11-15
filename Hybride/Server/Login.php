@@ -1,7 +1,8 @@
 <?php 
+header('Content-Type: application/json');
 $con = mysqli_connect("localhost", "dianaradueva", "dianaraduevaMI3", "events");
 
-    if(isset($_REQUEST["gebruikersnaam"]) and isset($_REQUEST["wachtwoord"])){
+if(isset($_REQUEST["gebruikersnaam"]) and isset($_REQUEST["wachtwoord"])){
         
         $gebruikersnaam = $_REQUEST['gebruikersnaam'];
         $wachtwoord = $_REQUEST['wachtwoord'];
@@ -9,16 +10,11 @@ $con = mysqli_connect("localhost", "dianaradueva", "dianaraduevaMI3", "events");
         $result = mysqli_query($con, $query) or die(mysqli_error($con));
         $count = mysqli_num_rows($result);
         if ($count == 1){
-            echo "true";
-            
+            $Data = array('success' => 'true');
         }else{
-            echo "false";
+            $Data = array('success' => 'false');
         }
     }
-    $req_dump = print_r($_REQUEST, TRUE);
-    $fp = fopen('request.log', 'a');
-    fwrite($fp, $req_dump);
-    fclose($fp);
-    
-    
+        $json= json_encode($Data, JSON_PRETTY_PRINT);
+        print_r($json);  
 ?>
