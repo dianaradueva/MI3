@@ -1,5 +1,6 @@
 <?php 
 header('Content-Type: application/json');
+header('Access-Control-Allow-Origin: *');
 $con = mysqli_connect("localhost", "dianaradueva", "dianaraduevaMI3", "events");
 
 if(isset($_REQUEST["gebruikersnaam"]) and isset($_REQUEST["wachtwoord"])){
