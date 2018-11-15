@@ -40,7 +40,7 @@ h1 {
 }
 
 h2 {
-    margin-top: 2vh;
+    margin-top: 15%;
     font-size: 5vw;
     color: black;
 }
@@ -127,4 +127,16 @@ button {
 #foutmelding {
     color: red;
     font-size: 20px;
+}
+
+#gnaam {
+    width: 50%;
+    height: 6%;
+    border: 1px solid black;
+}
+
+#wwoord {
+    width: 50%;
+    height: 6%;
+    border: 1px solid black;
 }
