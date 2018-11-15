@@ -11,7 +11,7 @@ if(isset($_REQUEST["gebruikersnaam"]) and isset($_REQUEST["wachtwoord"])){
         $result = mysqli_query($con, $query) or die(mysqli_error($con));
         $count = mysqli_num_rows($result);
         if ($count == 1){
-        $Data = array('login' => 'true');
+            $Data = array('login' => 'true');
         }else{
             $Data = array('login' => 'false');
         }
