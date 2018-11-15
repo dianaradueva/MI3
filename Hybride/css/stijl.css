@@ -20,12 +20,9 @@ input {
 }
 
 h1 {
-<<<<<<< HEAD
-    margin-top:4vh;
-=======
-    margin-top: 5vh;
->>>>>>> e7c2740126f3d4ad6e57a6cda81ce2b60a7c7b32
-    font-size: 8vw;
+    <<<<<<< HEAD margin-top: 4vh;
+    =======margin-top: 5vh;
+    > > > > > > > e7c2740126f3d4ad6e57a6cda81ce2b60a7c7b32 font-size: 8vw;
     color: black;
 }
 
@@ -39,7 +36,7 @@ h2 {
     width: 50vw;
     background-color: #3CA757;
     color: white;
-     margin-bottom: 4vh;
+    margin-bottom: 4vh;
 }
 
 .brand-logo center {
@@ -112,4 +109,9 @@ button {
     background-color: #3CA757;
     color: white;
     padding: 5px;
+}
+
+#foutmelding {
+    color: red;
+    font-size: 20px;
 }

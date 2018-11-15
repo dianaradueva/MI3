@@ -11,11 +11,11 @@ if(isset($_REQUEST["gebruikersnaam"]) and isset($_REQUEST["wachtwoord"])){
         $result = mysqli_query($con, $query) or die(mysqli_error($con));
         $count = mysqli_num_rows($result);
         if ($count == 1){
-            $Data = array('success' => 'true');
+        $Data = array('login' => 'true');
         }else{
-            $Data = array('success' => 'false');
+            $Data = array('login' => 'false');
         }
     }
-        $json= json_encode($Data, JSON_PRETTY_PRINT);
+        $json= json_encode($Data);
         print_r($json);  
 ?>
