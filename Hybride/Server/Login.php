@@ -14,7 +14,6 @@ $con = mysqli_connect("localhost", "dianaradueva", "dianaraduevaMI3", "events");
         }else{
             echo "false";
         }
-        echo'test';
     }
     $req_dump = print_r($_REQUEST, TRUE);
     $fp = fopen('request.log', 'a');
