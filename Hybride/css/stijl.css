@@ -41,10 +41,10 @@ h1 {
 }
 
 h2 {
-    margin-bottom: 8%;
+    margin-bottom: 5%;
     font-size: 5vw;
     color: black;
-    margin: 4%;
+    margin: 3%;
 }
 
 .btn-large {
@@ -174,7 +174,7 @@ form {
 }
 
 #buttonRegister {
-    margin-top: 10%
+    margin-top: 6%
 }
 
 footer {
