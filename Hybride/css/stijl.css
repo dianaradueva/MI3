@@ -101,7 +101,8 @@ h2 {
     margin: 20px;
 }
 
-<<<<<<< HEAD .profielfoto {
+.profielfoto {
+    margin-top: 10%;
     width: 90px;
     height: 90px;
     border-color: white;
