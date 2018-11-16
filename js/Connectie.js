@@ -29,7 +29,7 @@ function registratie() {
     var voornaam = $("#Voornaam").val();
     var gebruikersnaam = $("#Gebruikersnaam").val();
     var wachtwoord = $("#Wachtwoord").val();
-    var email = $("#email").val();
+    var email = $("#Email").val();
     var link = "http://www.gheraille.be/events/registratie.php?naam=" + naam + "&" + "voornaam=" + voornaam + "&" + "gebruikersnaam=" + gebruikersnaam + "&" + "wachtwoord=" + wachtwoord + "&" + "email=" + email;
     $.ajax({
         type: 'POST',
@@ -46,11 +46,18 @@ function registratie() {
             $myarray = data;
             if ($myarray["registratie"] == "true") {
                 window.location.href = "login.html";
+                console.log("werkt");
                 $("#foutmelding").append("");
             } else {
                 $("#foutmelding").empty();
                 $("#foutmelding").append("U gegevens zijn fout");
             }
+            console.log(naam);
+            console.log(voornaam);
+            console.log(gebruikersnaam);
+            console.log(wachtwoord);
+            console.log(email);
+
 
         }
     });

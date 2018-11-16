@@ -6,11 +6,12 @@
     <meta charset="utf-8">
     <meta title="Test">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="../js/Sidenav.js"></script>
-    <link type="text/css" rel="stylesheet" href="./css/materialize.min.css" media="screen,projection">
     <script type="text/javascript" src="../js/Connectie.js"></script>
+    <link type="text/css" rel="stylesheet" href="./css/materialize.min.css" media="screen,projection">
     <link type="text/css" rel="stylesheet" href="./css/stijl.css">
 
 </head>
@@ -27,16 +28,26 @@
         <h2>Naam:</h2>
         <input type="text" id="Naam" name="Naam">
         <h2>Voornaam:</h2>
-        <input type="text" id="Voornaam" name="Voornaam">
+        <input class="input" type="text" id="Voornaam" name="Voornaam">
         <h2>Gebruikersnaam:</h2>
-        <input type="text" id="Gebruikersnaam" name="Gebruikersnaam">
+        <input class="input" type="text" id="Gebruikersnaam" name="Gebruikersnaam">
         <h2>Wachtwoord:</h2>
-        <input type="text" id="Wachtwoord" name="Wachtwoord">
+        <input class="input" type="text" id="Wachtwoord" name="Wachtwoord">
         <h2>Email:</h2>
-        <input type="text" id="Email" name="Email">
-        <input onclick="registratie()" class="btn-large" type="submit" value="Sign up">
+        <input class="input" type="text" id="Email" name="Email">
+        <button type="button" id="buttonRegister" onclick="registratie()" class="btn-large" value="Sign up">Submit</button>
     </form>
+    <p id="foutmelding"></p>
+    <footer class="page-footer">
+        <div class="footer-copyright">
+            <div class="container">
+                © 2014 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
     <script type="text/javascript" src="../js/materialize.min.js"></script>
+    <script type="text/javascript" src="../js/Connectie.js"></script>
 </body>
 
 </html>
