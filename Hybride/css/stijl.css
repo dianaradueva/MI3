@@ -7,10 +7,6 @@ body {
     height: 100%;
 }
 
-#bodyNieuwEvent{
-    text-align: center;
-}
-
 footer {
     background-color: black;
     color: white;
@@ -20,6 +16,10 @@ footer {
 }
 
 #index-body {
+    text-align: center;
+}
+
+#bodyNieuwEvent {
     text-align: center;
 }
 
@@ -76,13 +76,9 @@ h2 {
     text-align: center;
 }
 
-.sidenav-trigger2{
+.sidenav-trigger2 {
     float: right;
     margin-right: 3%;
-}
-
-#iconNav{
-    font-size: 35px;
 }
 
 .sidenav li a {
@@ -95,6 +91,14 @@ h2 {
     margin-left: 2vw;
     margin-top: 1vw;
     height: 0vh;
+}
+
+#InputLijn1,
+#InputLijn2,
+#InputLijn3,
+#InputLijn4,
+#InputLijn5 {
+    width: 60%;
 }
 
 .user-view Background {
