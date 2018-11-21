@@ -93,10 +93,10 @@ h2 {
     height: 0vh;
 }
 
-#NaamEvent,
+#Naam,
 #Plaats,
 #Datum,
-#Tijd,
+#Uur,
 #Beschrijving {
     width: 60%;
 }
@@ -152,12 +152,6 @@ button {
 }
 
 #wwoord {
-    width: 50%;
-    height: 4%;
-    border: 1px solid black;
-}
-
-#Naam {
     width: 50%;
     height: 4%;
     border: 1px solid black;

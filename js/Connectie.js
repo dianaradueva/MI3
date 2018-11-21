@@ -65,24 +65,24 @@ function registratie() {
 
 
 function nieuwEvent() {
-    var naamevent = $("#Naamevent").val();
-    var plaats = $("#Plaats").val();
-    var datum = $("#Datum").val();
-    var tijd = $("#Tijd").val();
-    var beschrijving = $("#Beschrijving").val();
+    var Naam = $("#Naam").val();
+    var Plaats = $("#Plaats").val();
+    var Datum = $("#Datum").val();
+    var Uur = $("#Uur").val();
+    var Beschrijving = $("#Beschrijving").val();
     var account_id = 91;
-    var link = "http://www.gheraille.be/events/NieuwEvent.php?Naam=" + naamevent + "&" + "Plaats=" + plaats + "&" + "Datum=" + datum + "&" + "Uur=" + tijd + "&" + "Beschrijving=" + beschrijving + "&" + "account_id" + account_id;
+    var link = "http://www.gheraille.be/events/NieuwEvent.php?Naam=" + Naam + "&" + "Plaats=" + Plaats + "&" + "Datum=" + Datum + "&" + "Uur=" + Uur + "&" + "Beschrijving=" + Beschrijving + "&" + "account_id=" + account_id;
     $.ajax({
         type: 'POST',
         url: link,
         dataType: "json",
         data: {
-            naamevent: naamevent,
-            plaats: plaats,
-            datum: datum,
-            tijd: tijd,
-            beschrijving: beschrijving,
-            accoun_id: account_id,
+            Naam: Naam,
+            Plaats: Plaats,
+            Datum: Datum,
+            Uur: Uur,
+            Beschrijving: Beschrijving,
+            account_id: account_id,
 
         },
         success: function (data) {
@@ -95,11 +95,12 @@ function nieuwEvent() {
                 $("#foutmelding").empty();
                 $("#foutmelding").append("U gegevens zijn fout");
             }
-            console.log(naamevent);
-            console.log(plaats);
-            console.log(datum);
-            console.log(tijd);
-            console.log(beschrijving);
+            console.log(Naam);
+            console.log(Plaats);
+            console.log(Datum);
+            console.log(Uur);
+            console.log(Beschrijving);
+            console.log(account_id);
 
 
         }

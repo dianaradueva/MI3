@@ -9,7 +9,7 @@ if(!empty($_REQUEST["Naam"]) and !empty($_REQUEST["Plaats"]) and !empty($_REQUES
     
     $Naam = $_REQUEST["Naam"];
     $Plaats = $_REQUEST["Plaats"];
-    $Datum = $_REQUEST["Datum "];
+    $Datum = $_REQUEST["Datum"];
     $Uur = $_REQUEST["Uur"];
     $Beschrijving = $_REQUEST["Beschrijving"];
     $account_id = $_REQUEST["account_id"];
@@ -19,7 +19,7 @@ if(!empty($_REQUEST["Naam"]) and !empty($_REQUEST["Plaats"]) and !empty($_REQUES
     $statement = mysqli_prepare($con, "INSERT INTO evenementen (Naam, Plaats, Datum, Uur, Beschrijving, account_id) VALUES (?, ?, ?, ?, ?, ?)") or die(mysqli_error($con));
     mysqli_stmt_bind_param($statement, "sssssi", $Naam, $Plaats, $Datum, $Uur, $Beschrijving, $account_id);
     mysqli_stmt_execute($statement);
-       
+        
     $Data = array('Event aanmaken' => 'true'); 
     }
 
