@@ -72,6 +72,10 @@ h2 {
     text-align: center;
 }
 
+.sidenav-trigger2{
+    float: right;
+}
+
 .sidenav li a {
     color: white;
 }
