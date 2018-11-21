@@ -62,3 +62,46 @@ function registratie() {
         }
     });
 }
+
+
+function nieuwEvent() {
+    var naamevent = $("#Naamevent").val();
+    var plaats = $("#Plaats").val();
+    var datum = $("#Datum").val();
+    var tijd = $("#Tijd").val();
+    var beschrijving = $("#Beschrijving").val();
+    var account_id = 91;
+    var link = "http://www.gheraille.be/events/NieuwEvent.php?Naam=" + naamevent + "&" + "Plaats=" + plaats + "&" + "Datum=" + datum + "&" + "Uur=" + tijd + "&" + "Beschrijving=" + beschrijving + "&" + "account_id" + account_id;
+    $.ajax({
+        type: 'POST',
+        url: link,
+        dataType: "json",
+        data: {
+            naamevent: naamevent,
+            plaats: plaats,
+            datum: datum,
+            tijd: tijd,
+            beschrijving: beschrijving,
+            accoun_id: account_id,
+
+        },
+        success: function (data) {
+            $myarray = data;
+            if ($myarray["Event aanmaken"] == "true") {
+                window.location.href = "evenementen.html";
+                console.log("werkt");
+                $("#foutmelding").append("");
+            } else {
+                $("#foutmelding").empty();
+                $("#foutmelding").append("U gegevens zijn fout");
+            }
+            console.log(naamevent);
+            console.log(plaats);
+            console.log(datum);
+            console.log(tijd);
+            console.log(beschrijving);
+
+
+        }
+    });
+}

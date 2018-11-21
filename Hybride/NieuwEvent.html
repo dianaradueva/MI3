@@ -10,11 +10,12 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="../js/Sidenav.js"></script>
 
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection">
-    <link type="text/css" rel="stylesheet" href="/css/stijl.css">
+    <link type="text/css" rel="stylesheet" href="./css/materialize.min.css" media="screen,projection">
+    <link type="text/css" rel="stylesheet" href="./css/stijl.css">
 
     <link type="text/css" rel="stylesheet" href="./css/materialize.min.css" media="screen,projection">
     <link type="text/css" rel="stylesheet" href="./css/stijl.css">
+    <script type="text/javascript" src="../js/Connectie.js"></script>
 
 </head>
 
@@ -26,16 +27,16 @@
     </nav>
     <form>
         <h2>Naam Evenement:</h2>
-        <input id="InputLijn1" type="text" id="NaamEvent" name="NaamEvenement">
+        <input id="NaamEvent" type="text" id="NaamEvent" name="NaamEvenement">
         <h2>Plaats: </h2>
-        <input id="InputLijn2" type="text" id="PlaatsEvent" name="PlaatsEvent">
+        <input id="Plaats" type="text" id="PlaatsEvent" name="PlaatsEvent">
         <h2>Datum:</h2>
-        <input id="InputLijn3" type="text" id="Datum" name="Datum">
+        <input id="Datum" type="text" id="Datum" name="Datum">
         <h2>Tijd:</h2>
-        <input id="InputLijn4" type="text" id="Tijd" name="Tijd">
+        <input id="Tijd" type="text" id="Tijd" name="Tijd">
         <h2>Beschrijving:</h2>
-        <input id="InputLijn5" type="text" id="Beschrijving" name="Beschrijving">
-        <button type="button" id="buttonRegister" onclick="registratie()" class="btn-large" value="Sign up">Submit</button><br>
+        <input id="Beschrijving" type="text" id="Beschrijving" name="Beschrijving">
+        <button type="button" id="buttonRegister" onclick="nieuwEvent()" class="btn-large" value="Sign up">Submit</button><br>
     </form>
     <p id="foutmelding"></p>
 

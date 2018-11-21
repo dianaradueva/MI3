@@ -93,11 +93,11 @@ h2 {
     height: 0vh;
 }
 
-#InputLijn1,
-#InputLijn2,
-#InputLijn3,
-#InputLijn4,
-#InputLijn5 {
+#NaamEvent,
+#Plaats,
+#Datum,
+#Tijd,
+#Beschrijving {
     width: 60%;
 }
 
