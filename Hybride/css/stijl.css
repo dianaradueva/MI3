@@ -7,6 +7,10 @@ body {
     height: 100%;
 }
 
+#bodyNieuwEvent{
+    text-align: center;
+}
+
 footer {
     background-color: black;
     color: white;
@@ -75,6 +79,10 @@ h2 {
 .sidenav-trigger2{
     float: right;
     margin-right: 3%;
+}
+
+#iconNav{
+    font-size: 35px;
 }
 
 .sidenav li a {
