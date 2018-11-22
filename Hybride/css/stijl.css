@@ -99,11 +99,11 @@ h2 {
     height: 0vh;
 }
 
-#InputLijn1,
-#InputLijn2,
-#InputLijn3,
-#InputLijn4,
-#InputLijn5 {
+#Naam,
+#Plaats,
+#Datum,
+#Uur,
+#Beschrijving {
     width: 60%;
 }
 
@@ -141,6 +141,7 @@ button {
     border-radius: 15px;
 }
 
+<<<<<<< HEAD
 #Naam {
     width: 50%;
     height: 6%;
@@ -148,6 +149,8 @@ button {
     border-radius: 15px;
 }
 
+=======
+>>>>>>> 50a5c927fcedc68e190f6e00ef4d291fb3016ffe
 #Voornaam {
     width: 50%;
     height: 6%;
