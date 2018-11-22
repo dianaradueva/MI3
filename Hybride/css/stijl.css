@@ -99,7 +99,7 @@ h2 {
     height: 0vh;
 }
 
-#Naam,
+#NaamNieuwEvent,
 #Plaats,
 #Datum,
 #Uur,
@@ -141,7 +141,6 @@ button {
     border-radius: 15px;
 }
 
-<<<<<<< HEAD
 #Naam {
     width: 50%;
     height: 6%;
@@ -149,8 +148,6 @@ button {
     border-radius: 15px;
 }
 
-=======
->>>>>>> 50a5c927fcedc68e190f6e00ef4d291fb3016ffe
 #Voornaam {
     width: 50%;
     height: 6%;
