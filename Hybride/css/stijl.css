@@ -14,9 +14,26 @@ footer {
     height: 7%;
 }
 
-.profielfoto{
-    height: 25%;
+#profielPagina{
+    height: 100%;
+}
+
+.startProfiel{
+    height: 33%;
      border: 1px solid black;   
+}
+
+#profielfoto{
+    width: 30%;
+    height: 50%;
+    border: 1px solid black;
+    margin-top: 50px;
+    margin-left: 20px;
+    border-radius: 60px;
+}
+
+#kalender{
+    padding: 10px;
 }
 
 #index-body {
@@ -208,3 +225,4 @@ panelDiv{
 .panel-footer{
     padding: 30px 15px;
 }
+
