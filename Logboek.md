@@ -35,3 +35,9 @@
 * Inhoud van pagina's uittekenen
 * Inhoud pagina Vriendenlijst maken
 * CSS toepassen op de pagina's
+
+## Week 8 - 10 uur
+* Login en registratie maken met PHP
+* Footer maken op elke pagina
+* Nieuw evenement pagina maken en evenement tabel maken in database
+* Collapse toevoegen aan pagina evenementen
