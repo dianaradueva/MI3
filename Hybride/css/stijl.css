@@ -195,3 +195,16 @@ footer {
 #MainVriendenlijst {
     text-align: center;
 }
+
+panelDiv{
+    height: 100%;
+    width: 100%;
+}
+
+.panel-body{
+    padding: 22px 15px;
+}
+
+.panel-footer{
+    padding: 22px 15px;
+}
