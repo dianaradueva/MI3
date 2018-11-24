@@ -32,6 +32,19 @@ footer {
     border-radius: 60px;
 }
 
+.gegevensUser{
+    height: 60%;
+    width: 60%;
+    float: right;
+    margin-top: 40px;
+    padding: 10px;
+}
+
+#naamGebruiker{
+ font-size: 20px;
+font-weight: bold;
+}
+
 #kalender{
     padding: 10px;
 }
@@ -42,6 +55,11 @@ footer {
 
 #bodyNieuwEvent {
     text-align: center;
+}
+
+#evenementIcon{
+    width: 20%;
+    height: 20%;
 }
 
 #login-body {
