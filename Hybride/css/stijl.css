@@ -81,6 +81,19 @@ h2 {
     border-radius: 15px;
 }
 
+.btnzoeken{
+    width: 30vw;
+    background-color: #3CA757;
+    color: white;
+    margin-bottom: 4vh;
+    border-radius: 15px;
+    
+}
+
+.inhoudFriends{
+    margin: 20px;
+}
+
 .brand-logo center {
     color: white;
 }
@@ -234,6 +247,7 @@ panelDiv{
     display: inline-block;
     padding: 0 25px;
     height: 50px;
+    width: 100%;
     font-size: 16px;
     line-height: 50px;
     border-radius: 25px;
