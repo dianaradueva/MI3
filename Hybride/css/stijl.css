@@ -261,3 +261,10 @@ panelDiv{
     width: 50px;
     border-radius: 50%;
 }
+
+}
+
+.closeBtn:hover {
+    color: #000;
+  
+}
