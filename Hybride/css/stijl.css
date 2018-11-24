@@ -265,6 +265,7 @@ panelDiv{
 }
 
 .closeBtn:hover {
-    color: #000;
-  
+ color: #000;
+  float: right;
 }
+
