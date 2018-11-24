@@ -1,3 +1,4 @@
+
 function logincheck() {
     var gn = $("#gnaam").val();
     var ww = $("#wwoord").val();
@@ -57,8 +58,6 @@ function registratie() {
             console.log(gebruikersnaam);
             console.log(wachtwoord);
             console.log(email);
-
-
         }
     });
 }
@@ -83,7 +82,6 @@ function nieuwEvent() {
             Uur: Uur,
             Beschrijving: Beschrijving,
             account_id: account_id,
-
         },
         success: function (data) {
             $myarray = data;
@@ -101,8 +99,6 @@ function nieuwEvent() {
             console.log(Uur);
             console.log(Beschrijving);
             console.log(account_id);
-
-
         }
     });
 }
