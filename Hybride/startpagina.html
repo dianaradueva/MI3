@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <script src="../js/datepicker.js"></script>
     <script src="../js/Sidenav.js"></script>
 
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection">
@@ -26,7 +27,10 @@
     </nav>
        
     <div id="profielPagina">
-    <div class="startProfiel"><div id="profielfoto"> profielfoto</div></div>
+        <div class="startProfiel"> <img id="profielfoto" src="Icons/img_avatar2.png"><div class="gegevensUser"><h1 id="naamGebruiker">Gebruiker</h1></div>
+        </div>
+       <div id="datepicker"><i class="medium material-icons">date_range<input type="text" class="datepicker"></i></div>
+    </div>
 
     <ul id="slide-out" class="sidenav">
         <li>
@@ -36,28 +40,45 @@
                 </div>
             </div>
         </li>
-        <div class="divider"></div>
-        <li><a href="vriendenlijst.html">VRIENDENLIJST</a></li>
         <li>
-            <div class="divider"></div>
+            <div class="divider"> </div>
         </li>
-        <li><a href="evenementen.html">EVENEMENTEN</a></li>
+
         <li>
-            <div class="divider"></div>
+
+            <div class="divideLogo"><img id="vriendenIcon" src="Icons/friends.png"> </div>
+            <a href="vriendenlijst.html">VRIENDENLIJST</a>
         </li>
-        <li><a href="blog.html">BLOG</a></li>
-        <li>
-            <div class="divider"></div>
-        </li>
-        <li><a href="fotos.html">FOTO'S</a></li>
-        <li>
-            <div class="divider"></div>
-        </li>
-        <li><a href="login.html">LOG UIT</a></li>
+
+
         <li>
             <div class="divider"></div>
         </li>
 
+        <div class="divideLogo"><img id="eventsIcon" src="Icons/events.png"> </div>
+        <li><a href="evenementen.html">EVENEMENTEN</a></li>
+
+
+        <li>
+            <div class="divider"></div>
+        </li>
+        <div class="divideLogo"><img id="blogIcon" src="Icons/Blog.png"> </div>
+        <li><a href="blog.html">BLOG</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+
+        <div class="divideLogo"><img id="fotoIcon" src="Icons/Foto.png"> </div>
+        <li><a href="fotos.html">FOTO'S</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+
+        <div class="divideLogo"><img id="privacyIcon" src="Icons/privacy.png"> </div>
+        <li><a href="login.html">LOG UIT</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
     </ul>
     <footer class="page-footer">
         <div class="footer-copyright">
@@ -67,6 +88,7 @@
             </div>
         </div>
     </footer>
+    <script src="../js/datepicker.js"></script>
     <script type="text/javascript" src="../js/materialize.min.js"></script>
 </body>
 
