@@ -12,13 +12,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="../js/Sidenav.js"></script>
-
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection">
-    <link type="text/css" rel="stylesheet" href="css/stijl.css">
-
     <link type="text/css" rel="stylesheet" href="./css/materialize.min.css" media="screen,projection">
     <link type="text/css" rel="stylesheet" href="./css/stijl.css">
     <script type="text/javascript" src="../js/Connectie.js"></script>
+    <script type="text/javascript" src="../js/ServerData.js"></script>
 </head>
 
 <body id="body">
@@ -27,62 +25,32 @@
         <a href="#" data-target="slide-out" class="sidenav-trigger2"><img id="minlogo"></a>
         <a href="NieuwEvent.html" class="sidenav-trigger2"><i id="iconNav" class="material-icons">add</i></a>
     </nav>
-    <!-- <ul class="collapsible">
-        <li>
-            <div class="collapsible-header"><i onclick="changeicon1()" id="expand" class="material-icons">expand_more</i>Hier komt 1ste evenement</div>
-            <div class="collapsible-body"><span><img id="evenementIcon" src="Icons/Evenement.png">Lorem ipsum dolor sit amet.</span></div>
-        </li>
-        <li>
-            <div class="collapsible-header"><i id="expand2" onclick="changeicon2()" class="material-icons">expand_more</i>2de</div>
-            <div class="collapsible-body"><span><img id="evenementIcon" src="Icons/Evenement.png">Lorem ipsum dolor sit amet.</span></div>
-        </li>
-        <li>
-            <div class="collapsible-header"><i id="expand3" onclick="changeicon3()" class="material-icons">expand_more</i>3</div>
-            <div class="collapsible-body"><span><img id="evenementIcon" src="Icons/Evenement.png">Lorem ipsum dolor sit amet.</span></div>
-        </li>
-        <li>
-            <div class="collapsible-header"><i id="expand4" onclick="changeicon4()" class="material-icons">expand_more</i>4</div>
-            <div class="collapsible-body"><span><img id="evenementIcon" src="Icons/Evenement.png">Lorem ipsum dolor sit amet.</span></div>
-        </li>
-        <li>
-            <div class="collapsible-header"><i id="expand5" onclick="changeicon5()" class="material-icons">expand_more</i>5</div>
-            <div class="collapsible-body"><span><img id="evenementIcon" src="Icons/Evenement.png">Lorem ipsum dolor sit amet.</span></div>
-        </li>
-        <li>
-            <div class="collapsible-header"><i id="expand6" onclick="changeicon6()" class="material-icons">expand_more</i>6</div>
-            <div class="collapsible-body"><span><img id="evenementIcon" src="Icons/Evenement.png">Lorem ipsum dolor sit amet.</span></div>
-        </li>
-        <li>
-            <div class="collapsible-header"><i id="expand7" onclick="changeicon7()" class="material-icons">expand_more</i>7</div>
-            <div class="collapsible-body"><span><img id="evenementIcon" src="Icons/Evenement.png">Lorem ipsum dolor sit amet.</span></div>
-        </li>
-    </ul>-->
     <button class="collapsible">Open Collapsible</button>
     <div class="content">
         <img id="evenementIcon" src="Icons/Evenement.png">
         <div class="EventP">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
     </div>
     <button class="collapsible">Open Section 1</button>
     <div class="content">
         <img id="evenementIcon" src="Icons/Evenement.png">
         <div class="EventP">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
     </div>
     <button class="collapsible">Open Section 2</button>
     <div class="content">
         <img id="evenementIcon" src="Icons/Evenement.png">
         <div class="EventP">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
     </div>
     <button class="collapsible">Open Section 3</button>
     <div class="content">
         <img id="evenementIcon" src="Icons/Evenement.png">
         <div class="EventP">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
     </div>
     <ul id="slide-out" class="sidenav">
@@ -142,7 +110,10 @@
             </div>
         </div>
     </footer>
-    <script src="../js/collapsible.js"></script>
+    <script>
+        evenementen();
+    </script>
+    <script type="text/javascript" src="../js/collapsible.js"></script>
     <script type="text/javascript" src="../js/materialize.min.js"></script>
 </body>
 
