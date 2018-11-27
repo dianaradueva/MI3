@@ -1,6 +1,6 @@
 
 # Logboek Mi3 - Diana Radueva
-## Week 1 - 1 uur
+## Week 1 - 3 uur
 * Opzoeken wat het verschil is tussen hybride en native
 * Nadenken welke optie van de 2 het best wordt uitgewerkt
 * Onderwerp zoeken
@@ -10,21 +10,21 @@
 * Oefeningen op php proberen
 * Idee over app bespreken
 
-## Week 3 - 2 uur
+## Week 3 - 4 uur
 * Idee over app bespreken met teamgenoot
 * Aanpak van de opdracht bespreken
 * Taken beetje verdelen
 
 # Totale duur : 
 
-## Week 4 - 1 uur
+## Week 4 - 3 uur
 * database aanmaken op server voor project
 
-## Week 5 - 2 uur
+## Week 5 - 4 uur
 * structuur van hybride maken
 * andere paginas van de app maken
 
-## Week 6 - 6 uur
+## Week 6 - 8 uur
 * Tabellen in de database maken die we nodig hebben voor de app
 * Layout aanpassen van wat we reeds hebben
 * Data proberen te linken postman Filezilla
@@ -36,7 +36,7 @@
 * Inhoud pagina Vriendenlijst maken
 * CSS toepassen op de pagina's
 
-## Week 8 - 10 uur
+## Week 8 - 12 uur
 * Login en registratie maken met PHP
 * Footer maken op elke pagina
 * Nieuw evenement pagina maken en evenement tabel maken in database
