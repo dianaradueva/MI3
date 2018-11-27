@@ -1,5 +1,6 @@
-  document.addEventListener('DOMContentLoaded', function () {
+ /* document.addEventListener('DOMContentLoaded', function () {
       var elems = document.querySelectorAll('.collapsible');
+      
   });
 
   // Or with jQuery
@@ -35,27 +36,38 @@
           $("#expand5").text("expand_more");
           $("#expand6").text("expand_more");
           $("#expand7").text("expand_more");
+          console.log("tex == more");
       } else if (text == less) {
           $("#expand").text("expand_more");
-          $("#expand2").text("expand_less");
+        /*$("#expand2").text("expand_less");
           $("#expand3").text("expand_less");
           $("#expand4").text("expand_less");
           $("#expand5").text("expand_less");
           $("#expand6").text("expand_less");
           $("#expand7").text("expand_less");
-
-
       }
   };
 
   function changeicon2() {
-      var text2 = document.getElementById("expand").textContent;
+      var text2 = document.getElementById("expand2").textContent;
       var less = "expand_less";
       var more = "expand_more";
       if (text2 == more) {
           $("#expand2").text("expand_less");
+         $("#expand").text("expand_more");
+          $("#expand3").text("expand_more");
+          $("#expand4").text("expand_more");
+          $("#expand5").text("expand_more");
+          $("#expand6").text("expand_more");
+          $("#expand7").text("expand_more");
       } else if (text2 == less) {
-          $("#expand2").text("expand_more");
+        $("#expand2").text("expand_more");
+        /*$("#expand").text("expand_less");
+        $("#expand3").text("expand_less");
+        $("#expand4").text("expand_less");
+        $("#expand5").text("expand_less");
+        $("#expand6").text("expand_less");
+        $("#expand7").text("expand_less");
       }
   };
 
@@ -113,3 +125,19 @@
           $("#expand7").text("expand_more");
       }
   };
+*/
+          
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
