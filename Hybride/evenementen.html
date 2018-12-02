@@ -15,7 +15,6 @@
     <link type="text/css" rel="stylesheet" href="./css/materialize.min.css" media="screen,projection">
     <link type="text/css" rel="stylesheet" href="./css/stijl.css">
     <script type="text/javascript" src="../js/Connectie.js"></script>
-    <script src="../js/ServerData.js"></script>
 </head>
 
 <body id="body">
@@ -35,7 +34,7 @@
             <p class="datumEvent">Datum:</p>
             <p class="inhoudDatumEvent"></p>
             <p class="tijdEvent">Tijd:</p>
-            <p class="inhoudTijdEvent">21:30</p>
+            <p class="inhoudTijdEvent"></p>
             <p class="beschrijvingEvent">Beschrijving:</p>
             <p class="inhoudBeschrijving"></p>
 
@@ -196,7 +195,7 @@
         </div>
     </footer>
     <script>
-        evenementen();
+        evenementen(localStorage.getItem("id"));
     </script>
     <script src="../js/collapsible.js"></script>
     <script type="text/javascript" src="../js/materialize.min.js"></script>
