@@ -16,7 +16,7 @@ if(!empty($_REQUEST["NaamNieuwEvent"]) and !empty($_REQUEST["Plaats"]) and !empt
     
     if($NaamNieuwEvent != "undefined" and $Plaats != "undefined" and $Datum != "undefined" and $Uur != "undefined" and $Beschrijving != "undefined" and $account_id != "undefined"){
         
-    $statement = mysqli_prepare($con, "INSERT INTO evenementen (Naam, Plaats, Datum, Uur, Beschrijving, account_id) VALUES (?, ?, ?, ?, ?, ?)") or die(mysqli_error($con));
+    $statement = mysqli_prepare($con, "INSERT INTO evenementen(Naam, Plaats, Datum, Uur, Beschrijving, account_id) VALUES (?, ?, ?, ?, ?, ?)") or die(mysqli_error($con));
     mysqli_stmt_bind_param($statement, "sssssi", $NaamNieuwEvent, $Plaats, $Datum, $Uur, $Beschrijving, $account_id);
     mysqli_stmt_execute($statement);
         

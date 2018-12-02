@@ -4,6 +4,7 @@ function logincheck() {
     var link = "http://www.gheraille.be/events/login.php?gebruikersnaam=" + gn + "&" + "wachtwoord=" + ww;
     $.ajax({
         type: 'POST',
+        async: false,
         url: link,
         dataType: "json",
         data: {
@@ -13,16 +14,18 @@ function logincheck() {
         success: function (data) {
             $myarray = data;
             if ($myarray["login"] == "true") {
+                localStorage.setItem("id", $myarray["ID"]["account_id"]);
                 window.location.href = "startpagina.html";
                 $("#foutmelding").append("");
             } else {
                 $("#foutmelding").empty();
                 $("#foutmelding").append("U gegevens zijn fout");
             }
-
         }
     });
 }
+alert(localStorage.getItem("id1"));
+
 
 function registratie() {
     var naam = $("#Naam").val();
@@ -46,7 +49,6 @@ function registratie() {
             $myarray = data;
             if ($myarray["registratie"] == "true") {
                 window.location.href = "login.html";
-                console.log("werkt");
                 $("#foutmelding").append("");
             } else {
                 $("#foutmelding").empty();
@@ -68,8 +70,8 @@ function nieuwEvent() {
     var Datum = $("#Datum").val();
     var Uur = $("#Uur").val();
     var Beschrijving = $("#Beschrijving").val();
-    var account_id = 91;
-    var link = "http://www.gheraille.be/events/NieuwEvent.php?Naam=" + NaamNieuwEvent + "&" + "Plaats=" + Plaats + "&" + "Datum=" + Datum + "&" + "Uur=" + Uur + "&" + "Beschrijving=" + Beschrijving + "&" + "account_id=" + account_id;
+    var account_id = localStorage.getItem("id");
+    var link = "http://www.gheraille.be/events/NieuwEvent.php?NaamNieuwEvent=" + NaamNieuwEvent + "&" + "Plaats=" + Plaats + "&" + "Datum=" + Datum + "&" + "Uur=" + Uur + "&" + "Beschrijving=" + Beschrijving + "&" + "account_id=" + account_id;
     $.ajax({
         type: 'POST',
         url: link,
