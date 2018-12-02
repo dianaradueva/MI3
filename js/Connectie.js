@@ -128,3 +128,8 @@ function evenementen() {
     });
 
 }
+
+function Loguit() {
+    localStorage.removeItem('id');
+    window.location.href = "login.html";
+}
