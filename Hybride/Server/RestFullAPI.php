@@ -10,9 +10,7 @@ $dbname = "events";
 
 $con = mysqli_connect($servername, $username, $password, $dbname) or die(mysqli_connect_error());
 
-if(!empty($_REQUEST["id"])){
-    $id = $_REQUEST["id"];
-    
+function test($id){
 $query = "SELECT Naam, Plaats, Datum, Uur, Beschrijving FROM evenementen where account_id = '$id'";
 $result = mysqli_query($con, $query);
 $rows = array();
@@ -21,4 +19,11 @@ while($row = $result->fetch_array()){
 }
     echo json_encode($rows);
 }
+
+if(!empty($_REQUEST["id"])){
+    $id = $_REQUEST["id"];
+    test($id);
+}
+    
+
 ?>

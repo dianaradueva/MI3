@@ -7,7 +7,7 @@ if(isset($_REQUEST["gebruikersnaam"]) and isset($_REQUEST["wachtwoord"])){
         
         $gebruikersnaam = $_REQUEST['gebruikersnaam'];
         $wachtwoord = $_REQUEST['wachtwoord'];
-        $query = "SELECT account_id FROM `account` WHERE gebruikersnaam='$gebruikersnaam' and wachtwoord='$wachtwoord'";
+        $query = "SELECT account_id, gebruikersnaam FROM `account` WHERE gebruikersnaam='$gebruikersnaam' and wachtwoord='$wachtwoord'";
         $result = mysqli_query($con, $query) or die(mysqli_error($con));
         $count = mysqli_num_rows($result);
         while($row = $result->fetch_assoc()){
