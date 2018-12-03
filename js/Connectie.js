@@ -122,11 +122,9 @@ function evenementen() {
                 document.getElementsByClassName("inhoudDatumEvent")[i].append(obj[i][2]);
                 document.getElementsByClassName("inhoudTijdEvent")[i].append(obj[i][3]);
                 document.getElementsByClassName("inhoudBeschrijving")[i].append(obj[i][4]);
-
             }
         }
     });
-
 }
 
 function Data() {
