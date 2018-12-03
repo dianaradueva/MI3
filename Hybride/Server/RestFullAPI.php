@@ -12,6 +12,7 @@ $con = mysqli_connect($servername, $username, $password, $dbname) or die(mysqli_
 
 function test($id){
 $query = "SELECT Naam, Plaats, Datum, Uur, Beschrijving FROM evenementen where account_id = '$id'";
+    global $con;
 $result = mysqli_query($con, $query);
 $rows = array();
 while($row = $result->fetch_array()){
@@ -20,9 +21,22 @@ while($row = $result->fetch_array()){
     echo json_encode($rows);
 }
 
+function data($id){
+    $query = "SELECT gebruikersnaam FROM account where account_id = '$id'";
+global $con;
+$result = mysqli_query($con, $query);
+$rows = array();
+while($row = $result->fetch_array()){
+    $rows[] = $row;
+}
+    echo json_encode($rows);
+}
+
+
 if(!empty($_REQUEST["id"])){
     $id = $_REQUEST["id"];
     test($id);
+    data($id);
 }
     
 
