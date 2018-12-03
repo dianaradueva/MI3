@@ -122,11 +122,27 @@ function evenementen() {
                 document.getElementsByClassName("inhoudDatumEvent")[i].append(obj[i][2]);
                 document.getElementsByClassName("inhoudTijdEvent")[i].append(obj[i][3]);
                 document.getElementsByClassName("inhoudBeschrijving")[i].append(obj[i][4]);
-
             }
         }
     });
+}
 
+function Data() {
+    var id = localStorage.getItem("id");
+    $.ajax({
+        type: "POST",
+        url: "http://www.gheraille.be/events/Restfullapi.php?id=" + id,
+        contentType: 'application/json',
+        data: {
+            function: 'Data',
+        },
+        success: function (response) {
+            console.log("test");
+            var obj = JSON.parse(response);
+            console.log(obj);
+            document.getElementById("naamGebruiker").append(obj[1][5]);
+        }
+    });
 }
 
 function toonWachtwoord() {
