@@ -129,6 +129,25 @@ function evenementen() {
 
 }
 
+function toonWachtwoord() {
+    var x = document.getElementById("Wachtwoord");
+    if (x.type === "password") {
+        x.type = "text";
+    } else {
+        x.type = "password";
+    }
+}
+
+function toonWachtwoordLogin() {
+    var y = document.getElementById("wwoord");
+    if (y.type === "password") {
+        y.type = "text";
+    } else {
+        y.type = "password";
+    }
+}
+
+
 function Loguit() {
     localStorage.removeItem('id');
     window.location.href = "login.html";
