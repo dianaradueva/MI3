@@ -14,7 +14,7 @@ function logincheck() {
         success: function (data) {
             $myarray = data;
             if ($myarray["login"] == "true") {
-                localStorage.setItem("id", $myarray["ID"]["account_id"]);
+                sessionStorage.setItem("id", $myarray["ID"]["account_id"]);
                 window.location.href = "startpagina.html";
                 $("#foutmelding").append("");
             } else {
@@ -68,7 +68,7 @@ function nieuwEvent() {
     var Datum = $("#Datum").val();
     var Uur = $("#Uur").val();
     var Beschrijving = $("#Beschrijving").val();
-    var account_id = localStorage.getItem("id");
+    var account_id = sessionStorage.getItem("id");
     var link = "http://www.gheraille.be/events/NieuwEvent.php?NaamNieuwEvent=" + NaamNieuwEvent + "&" + "Plaats=" + Plaats + "&" + "Datum=" + Datum + "&" + "Uur=" + Uur + "&" + "Beschrijving=" + Beschrijving + "&" + "account_id=" + account_id;
     $.ajax({
         type: 'POST',
@@ -103,7 +103,7 @@ function nieuwEvent() {
 }
 
 function evenementen() {
-    var id = localStorage.getItem("id");
+    var id = sessionStorage.getItem("id");
     $.ajax({
         type: "POST",
         url: "http://www.gheraille.be/events/Restfullapi.php?id=" + id,
@@ -128,7 +128,7 @@ function evenementen() {
 }
 
 function Data() {
-    var id = localStorage.getItem("id");
+    var id = sessionStorage.getItem("id");
     $.ajax({
         type: "POST",
         url: "http://www.gheraille.be/events/Restfullapi.php?id=" + id,
@@ -165,6 +165,7 @@ function toonWachtwoordLogin() {
 
 
 function Loguit() {
-    localStorage.removeItem('id');
+    sessionStorage.removeItem('id');
     window.location.href = "login.html";
+
 }
