@@ -42,6 +42,7 @@
 * Nieuw evenement pagina maken en evenement tabel maken in database
 * Collapse toevoegen aan pagina evenementen
 
-## Week 9 - 3 uur
+## Week 9 - 6 uur
 * Kennismaking met Android Studio
 * Video's bekijken over "basis Android studio voor beginners"
+* Vriendelijst maken in database voor 1 specifieke gebruiker
