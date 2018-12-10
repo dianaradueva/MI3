@@ -116,6 +116,11 @@ h2 {
     color: white;
 }
 
+.Vriend {
+    margin-top: 0;
+    float: left;
+}
+
 .nav {
     background-color: #3CA757;
 }
@@ -354,7 +359,7 @@ panelDiv {
     width: 100%;
 }
 
-.naamVriend{
+.naamVriend {
     text-align: left;
-    
+
 }

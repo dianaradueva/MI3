@@ -169,3 +169,24 @@ function Loguit() {
     window.location.href = "login.html";
 
 }
+
+function vrienden() {
+    var id = sessionStorage.getItem("id");
+    $.ajax({
+        type: "POST",
+        url: "http://www.gheraille.be/events/Vrienden.php?id=" + id,
+        contentType: 'application/json',
+        data: {
+            function: 'vrienden',
+        },
+        success: function (response) {
+            console.log("lukt");
+            var obj = JSON.parse(response);
+            console.log(obj);
+            var i = 0;
+            for (i = 0; i < obj.length; i++) {
+                document.getElementsByClassName("Vriend")[i].append(obj[i][0]);
+            }
+        }
+    });
+}
