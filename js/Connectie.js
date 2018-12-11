@@ -116,13 +116,34 @@ function evenementen() {
             var obj = JSON.parse(response);
             console.log(obj);
             var i = 0;
+            var parent = $("#Hier");
+            $("#body").append("<script type='text/javascript' src='../js/materialize.min.js'></script>")
             for (i = 0; i < obj.length; i++) {
+                $("<button class='collapsible'><p class='eventNaam'></p></button><div class='content'><img id='evenementIcon' src='Icons/Evenement.png'><div class='EventP'><p class='plaatsEvent'>Plaats:</p><p class='inhoudPlaatsEvent'></p><p class='datumEvent'>Datum:</p><p class='inhoudDatumEvent'></p><p class='tijdEvent'>Tijd:</p><p class='inhoudTijdEvent'></p><p class='beschrijvingEvent'>Beschrijving:</p><p class='inhoudBeschrijving'></p></div></div>").appendTo('#Hier');
+                console.log("test");
                 document.getElementsByClassName("eventNaam")[i].append(obj[i][0]);
                 document.getElementsByClassName("inhoudPlaatsEvent")[i].append(obj[i][1]);
                 document.getElementsByClassName("inhoudDatumEvent")[i].append(obj[i][2]);
                 document.getElementsByClassName("inhoudTijdEvent")[i].append(obj[i][3]);
                 document.getElementsByClassName("inhoudBeschrijving")[i].append(obj[i][4]);
+
             }
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                });
+                console.log(coll.length);
+            }
+
         }
     });
 }
@@ -185,6 +206,7 @@ function vrienden() {
             console.log(obj);
             var i = 0;
             for (i = 0; i < obj.length; i++) {
+                $("<div class='chip'><img class='picvriend' src='Icons/img_avatar2.png' alt='Person'><p class='Vriend'></p><span class='closeBtn' onclick='this.parentElement.style.display='none''>&times;</span></div>").appendTo('#data');
                 document.getElementsByClassName("Vriend")[i].append(obj[i][0]);
             }
         }
