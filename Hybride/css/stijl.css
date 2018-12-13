@@ -23,6 +23,15 @@ footer {
     border: 1px solid black;
 }
 
+.picvriend {
+    width=96;
+    height=96;
+}
+
+.closeBtn {
+    float: right;
+}
+
 #profielfoto {
     width: 30%;
     height: 50%;
@@ -114,6 +123,11 @@ h2 {
 
 .brand-logo center {
     color: white;
+}
+
+.Vriend {
+    margin-top: 0;
+    float: left;
 }
 
 .nav {
@@ -354,7 +368,7 @@ panelDiv {
     width: 100%;
 }
 
-.naamVriend{
+.naamVriend {
     text-align: left;
-    
+
 }
