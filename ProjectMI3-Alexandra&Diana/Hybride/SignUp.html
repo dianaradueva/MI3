@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta title="Test">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="/jsSidenav.js"></script>
+    <script type="text/javascript" src="/jsConnectie.js"></script>
+    <link type="text/css" rel="stylesheet" href="./css/materialize.min.css" media="screen,projection">
+    <link type="text/css" rel="stylesheet" href="./css/stijl.css">
+</head>
+
+<body id="signup-body">
+
+    <nav class="nav">
+        <a href="#" class="brand-logo center">Friends events</a>
+    </nav>
+
+    <h1>Welkom</h1>
+
+    <form>
+        <h2>Naam:</h2>
+        <input type="text" id="Naam" name="Naam">
+        <h2>Voornaam:</h2>
+        <input class="input" type="text" id="Voornaam" name="Voornaam">
+        <h2>Gebruikersnaam:</h2>
+        <input class="input" type="text" id="Gebruikersnaam" name="Gebruikersnaam">
+        <h2>Wachtwoord:</h2>
+        <input type="password" class="input" id="Wachtwoord" name="Wachtwoord">
+        <input type="checkbox" onclick="toonWachtwoord()"><p>Show Password</p>
+        <h2>Email:</h2>
+        <input class="input" type="text" id="Email" name="Email">
+        <button type="button" id="buttonRegister" onclick="registratie()" class="btn-large" value="Sign up">Submit</button><br>
+        <a href="login.html">Meld aan</a>
+    </form>
+    <p id="foutmelding"></p>
+    <footer class="page-footer">
+        <div class="footer-copyright">
+            <div class="container">
+                <p style="float: left">Friends Events</p>
+                <p class="grey-text text-lighten-4 right" href="#!">Diana R., Alexandra K.</p>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="/jsmaterialize.min.js"></script>
+    <script type="text/javascript" src="/jsConnectie.js"></script>
+</body>
+
+</html>

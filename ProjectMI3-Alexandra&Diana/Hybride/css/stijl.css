@@ -1,0 +1,374 @@
+html {
+    height: 100%;
+}
+
+body {
+    text-align: left;
+    height: 100%;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 7%;
+}
+
+#profielPagina {
+    height: 100%;
+}
+
+.startProfiel {
+    height: 33%;
+    border: 1px solid black;
+}
+
+.picvriend {
+    width=96;
+    height=96;
+}
+
+.closeBtn {
+    float: right;
+}
+
+#profielfoto {
+    width: 30%;
+    height: 50%;
+    border: 1px solid black;
+    margin-top: 50px;
+    margin-left: 20px;
+    border-radius: 60px;
+}
+
+.gegevensUser {
+    height: 60%;
+    width: 60%;
+    float: right;
+    margin-top: 40px;
+    padding: 10px;
+}
+
+#naamGebruiker {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#kalender {
+    padding: 10px;
+}
+
+#index-body {
+    text-align: center;
+}
+
+#bodyNieuwEvent {
+    text-align: center;
+}
+
+#evenementIcon {
+    width: 20%;
+    height: 20%;
+}
+
+#login-body {
+    text-align: center;
+}
+
+input {
+    height: 1vh;
+}
+
+
+#signup-body {
+    text-align: center;
+    height: 100%;
+}
+
+h1 {
+    margin-top: 2%;
+    color: black;
+    font-size: 40px;
+    margin-bottom: 30px;
+    margin-top: 25px;
+}
+
+h2 {
+    margin-bottom: 5%;
+    font-size: 5vw;
+    color: black;
+    margin: 5%;
+}
+
+.btn-large {
+    width: 50vw;
+    background-color: #3CA757;
+    color: white;
+    margin-bottom: 4vh;
+    border-radius: 15px;
+}
+
+.btnzoeken {
+    width: 30vw;
+    background-color: #3CA757;
+    color: white;
+    margin-bottom: 4vh;
+    border-radius: 15px;
+
+}
+
+.inhoudFriends {
+    margin: 20px;
+}
+
+.brand-logo center {
+    color: white;
+}
+
+.Vriend {
+    margin-top: 0;
+    float: left;
+}
+
+.nav {
+    background-color: #3CA757;
+}
+
+.nav a {
+    font-size: 7vw;
+}
+
+.sidenav {
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.sidenav-trigger2 {
+    float: right;
+    margin-right: 3%;
+}
+
+.sidenav li a {
+    color: white;
+}
+
+.divideLogo {
+    display: block;
+    float: left;
+    margin-left: 2vw;
+    margin-top: 1vw;
+    height: 0vh;
+}
+
+#NaamNieuwEvent,
+#Plaats,
+#Datum,
+#Uur,
+#Beschrijving {
+    width: 60%;
+}
+
+.user-view Background {
+    text-align: center;
+}
+
+.Background-logo {
+    text-align: center;
+}
+
+button {
+    width: 20vw;
+    background-color: #3CA757;
+    color: white;
+    padding: 5px;
+}
+
+#foutmelding {
+    color: red;
+    font-size: 20px;
+}
+
+#gnaam {
+    width: 50%;
+    height: 6%;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+#wwoord {
+    width: 50%;
+    height: 6%;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+#Naam {
+    width: 50%;
+    height: 6%;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+#Voornaam {
+    width: 50%;
+    height: 6%;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+#Gebruikersnaam {
+    width: 50%;
+    height: 6%;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+#Wachtwoord {
+    width: 50%;
+    height: 6%;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+#Email {
+    width: 50%;
+    height: 6%;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+form {
+    height: 100%;
+}
+
+#buttonRegister {
+    margin-top: 6%
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 56px;
+}
+
+#MainVriendenlijst {
+    text-align: center;
+}
+
+panelDiv {
+    height: 100%;
+    width: 100%;
+}
+
+.panel-body {
+    padding: 20px 15px;
+}
+
+.panel-footer {
+    padding: 30px 15px;
+}
+
+#datepicker {
+    margin: 20px;
+}
+
+.chip {
+    display: inline-block;
+    padding: 0 25px;
+    height: 50px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 50px;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+}
+
+.chip img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+}
+
+.closeBtn:hover {
+    color: #000;
+    float: right;
+}
+
+.collapsible {
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+    background-color: #3CA757;
+}
+
+.collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+}
+
+.EventP {
+    float: right;
+    width: 76%;
+}
+
+.eventNaam {
+    margin: 0px;
+    width: 70%;
+    font-weight: bold;
+    float: left;
+}
+
+.plaatsEvent,
+.datumEvent,
+.tijdEvent,
+.beschrijvingEvent {
+    float: left;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-bottom: 0px;
+}
+
+.inhoudTijdEvent,
+.inhoudBeschrijving,
+.inhoudDatumEvent,
+.inhoudPlaatsEvent {
+    float: right;
+    width: 100%;
+}
+
+.naamVriend {
+    text-align: left;
+
+}

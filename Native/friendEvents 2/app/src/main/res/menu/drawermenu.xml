@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/vriendenlijst" android:title="Vriendenlijst" android:icon="@drawable/ic_outline_perm_contact_calendar_24px"/>
+    <item android:id="@+id/events" android:title="Events" android:icon="@drawable/ic_outline_event_24px"/>
+    <item android:id="@+id/blog" android:title="Blog" android:icon="@drawable/ic_outline_description_24px"/>
+    <item android:id="@+id/Fotos" android:title="Foto's" android:icon="@drawable/ic_outline_perm_media_24px"/>
+    <item android:id="@+id/LogUit" android:title="Log uit" android:icon="@drawable/ic_outline_exit_to_app_24px"/>
+
+</menu>

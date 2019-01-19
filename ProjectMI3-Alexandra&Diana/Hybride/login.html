@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta title="Test">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="/jsSidenav.js"></script>
+    <script type="text/javascript" src="/jsConnectie.js"></script>
+    <link type="text/css" rel="stylesheet" href="./css/materialize.min.css" media="screen,projection">
+    <link type="text/css" rel="stylesheet" href="./css/stijl.css">
+
+</head>
+
+<body id="login-body">
+
+    <nav class="nav">
+        <a href="#" class="brand-logo center">Friends events</a>
+    </nav>
+
+    <h1>Welkom</h1>
+    <h2>Gebruikersnaam:</h2>
+    <input type="text" id="gnaam" name="gebruikersnaam">
+    <h2>Wachtwoord:</h2>
+    <input type="password" id="wwoord" name="wachtwoord">
+    <input type="checkbox" onclick="toonWachtwoordLogin()"><p>Show Password</p>
+    <br>
+    <br>
+
+    <input onclick="logincheck()" class="btn-large" type="submit" value="Login">
+    <p id="foutmelding"></p>
+    <a href="SignUp.html">Nog geen account? Maak nieuw account aan</a>
+    <footer class="page-footer">
+        <div class="footer-copyright">
+            <div class="container">
+                <p style="float: left">Friends Events</p>
+                <p class="grey-text text-lighten-4 right" href="#!">Diana R., Alexandra K.</p>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="/jsmaterialize.min.js"></script>
+
+</body>
+
+</html>
